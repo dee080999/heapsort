@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+<title>Heap Sort</title>
+
+
+
+
+
+
+<script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+</script>
+
+
+<script type="text/javascript">
+    </script>
+    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-secure-code="uLs8oE" src="//static.etracker.com/code/e.js"></script>
+
+
+<script>
+        function showNavbarContent(id) {
+            try {
+                var sorting = document.getElementById('navSortingAlgorithms');
+                var specials = document.getElementById('navSpecials');
+                
+                if (sorting.id !== id)
+                    sorting.classList.remove("in");
+                if (specials.id !== id)
+                    specials.classList.remove("in");
+
+            } catch (error) {
+
+            }
+        }
+    </script></head>
+    <style>
+        body{
+               background-color: #e8eaf6;
+        }
+        button{
+            background-color: #695c80;
+            color: white;
+            
+        }
+
+        .panel-title{
+            font-size: 50px;
+            color: #464646;
+            font-weight: bolder;
+            text-align: center;
+            position: relative;
+            animation:mymove 5s infinite;
+            animation-direction: alternate;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        @keyframes mymove {
+            from {left: 0px;}
+            to {left: 100px;right: 200px;}
+        }
+        a{
+  text-decoration: none;
+  background-color: transparent;
+  color:#ededed;
+ }
+ .header-link{
+  float:right;
+  font-size:14px;
+  height: 50px;
+  padding: 15px 15px;
+  font-size:16px;
+  font-weight: bold;}
+ 
+ .header {
+  background-color:#000;
+  color:#fff;
+  border-color: #080808;
+  min-height: 50px;
+  border: 1px solid transparent;
+ }
+ .inner-header{
+     width:80%;
+  margin:auto;
+ }
+ .logo{
+  float: left;
+  height: 50px;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color:whitesmoke;
+ }
+ .detailsCard {
+  width: 366px;
+  height: 200px;
+  display: flex;
+  background-color: #bc8b8b;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgb(170 217 255 / 20%);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.details-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+    </style>
+
+<body style="background-image: url(sort5.jpg);background-repeat: no-repeat;">
+    <div class="header">
+        <div class="inner-header">
+        <div class="logo">
+           <img src="Heap" alt="">
+        </div>
+         <div class="header-link">
+             <a href="./home.php"><i class="material-icons">home</i></a>
+         </div>
+           <div class="header-link">
+            <a href="./heapsort.html"><i class="material-icons">account_tree</i></a>
+            </div>
+            </div>
+            <div class="header-link">
+             <a href="./contact.html"><i class="material-icons">contacts</i></a>
+         </div>
+     </div>
+	<div class="container body-content">
+	          <br />
+        <!-- content start -->
+        
+  
+
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3 class="panel-title text-center">HeapSort</h3>
+    </div>
+    <div class="panel-body well-color no-padding">
+        <br />
+        <center>
+        <p id="buttons" class="text-center">
+            <input id="inputField" type="number" onkeydown="if (event.keyCode == 13) add()" min="1" max="99" step="1" value="1" size="10" maxlength="2">
+            <button id="add" onclick="add()" class="btn btn-primary btn-sm">Add</button>
+            <button id="random" onclick="addRandom()" class="btn btn-primary btn-sm">Add 10 Random Key</button>
+            <button id="sort" onclick="initSort()" class="btn btn-primary btn-sm">Sort</button>
+        </p>
+
+        <p id="buttons2" class="text-center">
+            <button id="pp" onclick="pausePlay()" class="btn btn-primary btn-sm">Pause/Play</button>
+            <button id="stop" onclick="stopButton()" class="btn btn-primary btn-sm">Stop</button>
+        </p>
+
+      <canvas class="canvas-sorting" id="paint" width="1108" height="560"></canvas>
+        </center>
+    </div>
+</div>
+
+
+
+
+
+<script src="heapscript.js"></script>
+        
+        <!-- content end -->
+        <hr />
+ </div>
+    
+</body>
+
+</html>
