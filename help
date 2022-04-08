@@ -9,7 +9,7 @@
     height: 200px;
     font-size: 10px;
     background: #868db5;
-    transition: width 4s, height 6s;
+    transition: width 4s, height 5s;
 }
 <canvas class="canvas-sorting" id="paint" width="1108" height="560">
    
